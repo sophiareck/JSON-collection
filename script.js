@@ -7,7 +7,7 @@ let jsonDatabase = [{
     "genre": "Punk Rock",
     "year": "2020",
     "favoriteLyric": "Yeah, I needed something less delicate. Cause I can't seem to breathe, and I'm totally nervous again",
-    "youtubeLink": "<iframe width = \"420\" height = \"236.25\" src = \"https://www.youtube.com/embed/PWNyNg3SVqk\" title = \"YouTube video player\" frameborder = \"0\" allow = \"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen > < /iframe>"
+    "youtubeLink": "<iframe width = \"420\" height = \"236.25\" src = \"https://www.youtube.com/embed/PWNyNg3SVqk\" title = \"YouTube video player\" frameborder = \"0\" allow = \"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen onload='resizeIframe(this)'> < /iframe>"
   },
   {
     "color": "#FFB7B2",
@@ -16,7 +16,7 @@ let jsonDatabase = [{
     "genre": "Indie",
     "year": "2020",
     "favoriteLyric": "Oh, I am just a kid. I never use my brain, I only use my heart and my imagination",
-    "youtubeLink": "<iframe width = \"420\" height = \"236.25\" src = \"https://www.youtube.com/embed/dDDulcqQEuc\" title = \"YouTube video player\" frameborder = \"0\" allow = \"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen > < /iframe>"
+    "youtubeLink": "<iframe width = \"420\" height = \"236.25\" src = \"https://www.youtube.com/embed/dDDulcqQEuc\" title = \"YouTube video player\" frameborder = \"0\" allow = \"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen onload='resizeIframe(this)'> < /iframe>"
   },
   {
     "color": "#FFDAC1",
@@ -25,7 +25,7 @@ let jsonDatabase = [{
     "genre": "Alternative/Indie",
     "year": "2020",
     "favoriteLyric": "Paralysed by my own emotion, something inside got me wondering is this real?",
-    "youtubeLink": "<iframe width = \"420\" height = \"236.25\" src = \"https://www.youtube.com/embed/q0afRR3cJ9c\" title = \"YouTube video player\" frameborder = \"0\" allow = \"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen > < /iframe>"
+    "youtubeLink": "<iframe width = \"420\" height = \"236.25\" src = \"https://www.youtube.com/embed/q0afRR3cJ9c\" title = \"YouTube video player\" frameborder = \"0\" allow = \"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen onload='resizeIframe(this)'> < /iframe>"
   },
   {
     "color": "#E2F0CB",
@@ -34,7 +34,7 @@ let jsonDatabase = [{
     "genre": "Indie",
     "year": "2021",
     "favoriteLyric": "Can't hide from the corners of my mind. I'm terrified of what's inside",
-    "youtubeLink": "<iframe width = \"420\" height = \"236.25\" src = \"https://www.youtube.com/embed/wehVzQt4Czg\" allowfullscreen > < /iframe>"
+    "youtubeLink": "<iframe width = \"420\" height = \"236.25\" src = \"https://www.youtube.com/embed/wehVzQt4Czg\" allowfullscreen onload='resizeIframe(this)'> < /iframe>"
   },
   {
     "color": "#B5EAD7",
@@ -43,7 +43,7 @@ let jsonDatabase = [{
     "genre": "Riot grrrl/Pop-Punk",
     "year": "2016",
     "favoriteLyric": "We get it dude, already heard enough from you",
-    "youtubeLink": "<iframe width = \"420\" height = \"236.25\" src = \"https://www.youtube.com/embed/PGM2tCTpuzY\" title = \"YouTube video player\" frameborder = \"0\" allow = \"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen > < /iframe>"
+    "youtubeLink": "<iframe width = \"420\" height = \"236.25\" src = \"https://www.youtube.com/embed/PGM2tCTpuzY\" title = \"YouTube video player\" frameborder = \"0\" allow = \"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen onload='resizeIframe(this)'> < /iframe>"
   },
   {
     "color": "#C7CEEA",
@@ -52,9 +52,14 @@ let jsonDatabase = [{
     "genre": "Pop-Punk",
     "year": "2021",
     "favoriteLyric": "Ladies and ladies— No gentlemen— Show me what you got",
-    "youtubeLink": "<iframe width = \"420\" height = \"236.25\" src = \"https://www.youtube.com/embed/fhadDGg9HIU\" title = \"YouTube video player\" frameborder = \"0\" allow = \"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen > < /iframe>"
+    "youtubeLink": "<iframe width = \"420\" height = \"236.25\" src = \"https://www.youtube.com/embed/fhadDGg9HIU\" title = \"YouTube video player\" frameborder = \"0\" allow = \"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen onload='resizeIframe(this)'> < /iframe>"
   }
 ];
+
+function resizeIframe(obj) {
+  obj.style.height = "20vw";
+  obj.style.width = "35.56vw";
+}
 
 function createElement(incomingJSON) {
   //create container for whole song
