@@ -31,7 +31,7 @@ let jsonDatabase = [{
     "color": "#E2F0CB",
     "title": "Serotonin",
     "artist": "girl in red",
-    "genre": "Indie",
+    "genre": "Indie Pop",
     "year": "2021",
     "favoriteLyric": "Can't hide from the corners of my mind. I'm terrified of what's inside",
     "youtubeLink": "<iframe width = \"420\" height = \"236.25\" src = \"https://www.youtube.com/embed/wehVzQt4Czg\" allowfullscreen onload='resizeIframe(this)'> < /iframe>"
@@ -98,6 +98,6 @@ function createElement(incomingJSON) {
   newContentElement.appendChild(newContentVideo);
   contentGrid.appendChild(newContentElement);
 }
-for (var i = 0; i < 6; i++) {
+for (var i = 0; i < jsonDatabase.length; i++) {
   createElement(jsonDatabase[i]);
 }
